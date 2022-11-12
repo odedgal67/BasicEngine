@@ -93,6 +93,8 @@
 				Clear(0,0,0,0);
 		}
 
+		//glViewport(256,0,256,256);
+		//glViewport(0,256,256,256);
 		for (unsigned int i=0; i<shapes.size();i++)
 		{
 			if(shapes[i]->Is2Render())
