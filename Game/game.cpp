@@ -208,113 +208,6 @@ unsigned char* Game::Halftone(const std::string& fileName)
 		}
 	}
 	unsigned char* newData = Generate1DMatrix(newData2D, 512);
-    // int i =0;
-	// int newDataI = 0;
-    // for(int i=0; i < 256 * 256 * 4; i = i + 4)
-	// {
-	// 	if (data[i] <= 51)
-	// 	{
-	// 		//R
-	// 		newData[newDataI] = 0;
-	// 		newData[newDataI+RIGHT] = 0;
-	// 		newData[newDataI+DOWN] = 0;
-	// 		newData[newDataI+DOWN+RIGHT] = 0;
-	// 		//G
-	// 		newData[newDataI+1] = 0;
-	// 		newData[newDataI+1+RIGHT] = 0;
-	// 		newData[newDataI+1+DOWN] = 0;
-	// 		newData[newDataI+1+DOWN+RIGHT] = 0;
-	// 		//B
-	// 		newData[newDataI+2] = 0;
-	// 		newData[newDataI+2+RIGHT] = 0;
-	// 		newData[newDataI+2+DOWN] = 0;
-	// 		newData[newDataI+2+DOWN+RIGHT] = 0;
-	// 	}
-	// 	else if(data[i] <= 102)
-	// 	{
-	// 		//R
-	// 		newData[newDataI] = 0;
-	// 		newData[newDataI+RIGHT] = 0;
-	// 		newData[newDataI+DOWN] = 255;
-	// 		newData[newDataI+DOWN+RIGHT] = 0;
-	// 		//G
-	// 		newData[newDataI+1] = 0;
-	// 		newData[newDataI+1+RIGHT] = 0;
-	// 		newData[newDataI+1+DOWN] = 255;
-	// 		newData[newDataI+1+DOWN+RIGHT] = 0;
-	// 		//B
-	// 		newData[newDataI+2] = 0;
-	// 		newData[newDataI+2+RIGHT] = 0;
-	// 		newData[newDataI+2+DOWN] = 255;
-	// 		newData[newDataI+2+DOWN+RIGHT] = 0;
-	// 	}
-	// 	else if(data[i] <= 153)
-	// 	{
-	// 		//R
-	// 		newData[newDataI] = 0;
-	// 		newData[newDataI+RIGHT] = 255;
-	// 		newData[newDataI+DOWN] = 255;
-	// 		newData[newDataI+DOWN+RIGHT] = 0;
-	// 		//G
-	// 		newData[newDataI+1] = 0;
-	// 		newData[newDataI+1+RIGHT] = 255;
-	// 		newData[newDataI+1+DOWN] = 255;
-	// 		newData[newDataI+1+DOWN+RIGHT] = 0;
-	// 		//B
-	// 		newData[newDataI+2] = 0;
-	// 		newData[newDataI+2+RIGHT] = 255;
-	// 		newData[newDataI+2+DOWN] = 255;
-	// 		newData[newDataI+2+DOWN+RIGHT] = 0;
-	// 	}
-	// 	else if(data[i] <= 204)
-	// 	{
-	// 		//R
-	// 		newData[newDataI] = 0;
-	// 		newData[newDataI+RIGHT] = 255;
-	// 		newData[newDataI+DOWN] = 255;
-	// 		newData[newDataI+DOWN+RIGHT] = 255;
-	// 		//G
-	// 		newData[newDataI+1] = 0;
-	// 		newData[newDataI+1+RIGHT] = 255;
-	// 		newData[newDataI+1+DOWN] = 255;
-	// 		newData[newDataI+1+DOWN+RIGHT] = 255;
-	// 		//B
-	// 		newData[newDataI+2] = 0;
-	// 		newData[newDataI+2+RIGHT] = 255;
-	// 		newData[newDataI+2+DOWN] = 255;
-	// 		newData[newDataI+2+DOWN+RIGHT] = 255;
-	// 	}
-	// 	else
-	// 	{
-	// 		//R
-	// 		newData[newDataI] = 255;
-	// 		newData[newDataI+RIGHT] = 255;
-	// 		newData[newDataI+DOWN] = 255;
-	// 		newData[newDataI+DOWN+RIGHT] = 255;
-	// 		//G
-	// 		newData[newDataI+1] = 255;
-	// 		newData[newDataI+1+RIGHT] = 255;
-	// 		newData[newDataI+1+DOWN] = 255;
-	// 		newData[newDataI+1+DOWN+RIGHT] = 255;
-	// 		//B
-	// 		newData[newDataI+2] = 255;
-	// 		newData[newDataI+2+RIGHT] = 255;
-	// 		newData[newDataI+2+DOWN] = 255;
-	// 		newData[newDataI+2+DOWN+RIGHT] = 255;
-	// 	}
-	// 	//Alpha
-	// 	newData[newDataI+3] = 255;
-	// 	newData[newDataI+3+RIGHT] = 255;
-	// 	newData[newDataI+3+DOWN] = 255;
-	// 	newData[newDataI+3+RIGHT+DOWN] = 255;
-
-	// 	newDataI = 2*i;
-	// 	if(i % (256*4) == 0 && i !=0) //Finished a line
-	// 	{
-	// 		newDataI = newDataI + DOWN;
-	// 	}
-	// }
-
 	return newData;
 }
 
@@ -323,11 +216,12 @@ unsigned char* Game::EdgeDetection(const std::string& fileName)
 {
 	int width, height, numComponents;
     unsigned char* data = stbi_load((fileName).c_str(), &width, &height, &numComponents, 4);
-    int i =0;
-    for(int i=0; i < 256 * 256 * 4; i++)
-	{
-		data[i] = int(data[i] / 16) * 16;
-	}
+	
+    // int i =0;
+    // for(int i=0; i < 256 * 256 * 4; i++)
+	// {
+	// 	data[i] = (data[i] / 16) * 16;
+	// }
 
 	return data;
 }
