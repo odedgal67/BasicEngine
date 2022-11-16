@@ -1,0 +1,2454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Game"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\res\;CMake Files\res\includes\;CMake Files\res\includes\glfw\;CMake Files\res\includes\glfw\src\;CMake Files\res\includes\glfw\examples\;CMake Files\res\includes\glfw\tests\;CMake Files\res\includes\glad\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Display">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/Display.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 Display"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Display/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/Display.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 Display/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Engine">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/Engine.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 Engine"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Engine/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/Engine.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 Engine/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Game">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/Game.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glad/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 Game"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Game/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/Game.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glad/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 Game/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 list_install_components"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 install"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 install/local"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\Makefile VERBOSE=1 uninstall"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 glfw"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 glfw/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="boing">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/boing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 boing"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="boing/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/boing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 boing/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gears">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/gears.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 gears"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gears/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/gears.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 gears/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heightmap">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/heightmap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 heightmap"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heightmap/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/heightmap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 heightmap/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offscreen">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/offscreen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 offscreen"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offscreen/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/offscreen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 offscreen/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="particles">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/particles.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 particles"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="particles/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/particles.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 particles/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sharing">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/sharing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 sharing"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sharing/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/sharing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 sharing/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 simple"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 simple/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="splitview">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/splitview.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 splitview"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="splitview/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/splitview.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 splitview/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wave">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/wave.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 wave"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wave/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples/wave.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/examples"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 wave/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clipboard">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/clipboard.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clipboard"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clipboard/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/clipboard.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clipboard/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="events">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/events.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 events"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="events/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/events.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 events/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="msaa">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/msaa.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 msaa"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="msaa/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/msaa.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 msaa/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfwinfo">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/glfwinfo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 glfwinfo"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfwinfo/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/glfwinfo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 glfwinfo/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="iconify">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/iconify.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 iconify"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="iconify/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/iconify.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 iconify/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monitors">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/monitors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 monitors"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="monitors/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/monitors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 monitors/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reopen">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/reopen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 reopen"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reopen/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/reopen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 reopen/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cursor">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/cursor.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 cursor"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cursor/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/cursor.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 cursor/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="empty">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/empty.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 empty"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="empty/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/empty.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 empty/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gamma">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/gamma.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 gamma"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gamma/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/gamma.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 gamma/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="icon">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/icon.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 icon"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="icon/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/icon.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 icon/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inputlag">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/inputlag.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 inputlag"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="inputlag/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/inputlag.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 inputlag/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="joysticks">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/joysticks.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 joysticks"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="joysticks/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/joysticks.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 joysticks/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opacity">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/opacity.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 opacity"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opacity/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/opacity.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 opacity/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tearing">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/tearing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 tearing"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tearing/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/tearing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 tearing/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threads">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/threads.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 threads"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threads/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/threads.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 threads/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="timeout">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/timeout.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 timeout"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="timeout/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/timeout.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 timeout/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="title">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/title.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 title"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="title/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/title.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 title/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vulkan">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/vulkan.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 vulkan"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vulkan/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/vulkan.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 vulkan/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="windows">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/windows.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 windows"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="windows/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests/windows.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/tests"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 windows/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glfw\tests\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glad/glad.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glad"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glad/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 glad"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad/fast">
+				<Option output="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glad/glad.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glad"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW"/>
+					<Add directory="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glad/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 glad/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\School\7th_semester\Graphics\Assignments\BasicEngine\cmake-build-debug\res\includes\glad\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW/debugTimer.h">
+			<Option target="Display"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW/display.cpp">
+			<Option target="Display"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/DisplayGLFW/display.h">
+			<Option target="Display"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/Camera.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/Camera.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/IndexBuffer.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/IndexBuffer.hpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/Mesh.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/Mesh.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/MeshConstructor.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/MeshConstructor.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/MovableGLM.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/MovableGLM.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/VertexArray.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/VertexArray.hpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/VertexBuffer.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/VertexBuffer.hpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/camera.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/obj_loader.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/obj_loader.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/resource.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/scene.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/scene.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/shader.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/shader.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/shape.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/shape.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/stb_image.c">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/stb_image.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/stb_image_write.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/texture.cpp">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/texture.h">
+			<Option target="Engine"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Game/InputManager.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Game/game.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Game/game.h">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/Game/main.cpp">
+			<Option target="Game"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/cmake-build-debug/res/includes/glfw/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glad/src/glad.c">
+			<Option target="glad"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/getopt.c">
+			<Option target="particles"/>
+			<Option target="clipboard"/>
+			<Option target="events"/>
+			<Option target="msaa"/>
+			<Option target="glfwinfo"/>
+			<Option target="iconify"/>
+			<Option target="monitors"/>
+			<Option target="inputlag"/>
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/getopt.h">
+			<Option target="particles"/>
+			<Option target="clipboard"/>
+			<Option target="events"/>
+			<Option target="msaa"/>
+			<Option target="glfwinfo"/>
+			<Option target="iconify"/>
+			<Option target="monitors"/>
+			<Option target="inputlag"/>
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/glad/gl.h">
+			<Option target="boing"/>
+			<Option target="gears"/>
+			<Option target="heightmap"/>
+			<Option target="offscreen"/>
+			<Option target="particles"/>
+			<Option target="sharing"/>
+			<Option target="simple"/>
+			<Option target="splitview"/>
+			<Option target="wave"/>
+			<Option target="clipboard"/>
+			<Option target="events"/>
+			<Option target="msaa"/>
+			<Option target="glfwinfo"/>
+			<Option target="iconify"/>
+			<Option target="monitors"/>
+			<Option target="reopen"/>
+			<Option target="cursor"/>
+			<Option target="empty"/>
+			<Option target="gamma"/>
+			<Option target="icon"/>
+			<Option target="inputlag"/>
+			<Option target="joysticks"/>
+			<Option target="opacity"/>
+			<Option target="tearing"/>
+			<Option target="threads"/>
+			<Option target="timeout"/>
+			<Option target="title"/>
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/glad/vulkan.h">
+			<Option target="glfwinfo"/>
+			<Option target="vulkan"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/glad_gl.c">
+			<Option target="boing"/>
+			<Option target="gears"/>
+			<Option target="heightmap"/>
+			<Option target="offscreen"/>
+			<Option target="particles"/>
+			<Option target="sharing"/>
+			<Option target="simple"/>
+			<Option target="splitview"/>
+			<Option target="wave"/>
+			<Option target="clipboard"/>
+			<Option target="events"/>
+			<Option target="msaa"/>
+			<Option target="glfwinfo"/>
+			<Option target="iconify"/>
+			<Option target="monitors"/>
+			<Option target="reopen"/>
+			<Option target="cursor"/>
+			<Option target="empty"/>
+			<Option target="gamma"/>
+			<Option target="icon"/>
+			<Option target="inputlag"/>
+			<Option target="joysticks"/>
+			<Option target="opacity"/>
+			<Option target="tearing"/>
+			<Option target="threads"/>
+			<Option target="timeout"/>
+			<Option target="title"/>
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/glad_vulkan.c">
+			<Option target="glfwinfo"/>
+			<Option target="vulkan"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/tinycthread.c">
+			<Option target="particles"/>
+			<Option target="empty"/>
+			<Option target="threads"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/deps/tinycthread.h">
+			<Option target="particles"/>
+			<Option target="empty"/>
+			<Option target="threads"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/boing.c">
+			<Option target="boing"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/gears.c">
+			<Option target="gears"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/glfw.rc">
+			<Option target="boing"/>
+			<Option target="gears"/>
+			<Option target="heightmap"/>
+			<Option target="offscreen"/>
+			<Option target="particles"/>
+			<Option target="sharing"/>
+			<Option target="simple"/>
+			<Option target="splitview"/>
+			<Option target="wave"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/heightmap.c">
+			<Option target="heightmap"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/offscreen.c">
+			<Option target="offscreen"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/particles.c">
+			<Option target="particles"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/sharing.c">
+			<Option target="sharing"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/simple.c">
+			<Option target="simple"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/splitview.c">
+			<Option target="splitview"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/wave.c">
+			<Option target="wave"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/wgl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/wgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/win32_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/clipboard.c">
+			<Option target="clipboard"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/cursor.c">
+			<Option target="cursor"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/empty.c">
+			<Option target="empty"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/events.c">
+			<Option target="events"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/gamma.c">
+			<Option target="gamma"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/glfwinfo.c">
+			<Option target="glfwinfo"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/icon.c">
+			<Option target="icon"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/iconify.c">
+			<Option target="iconify"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/inputlag.c">
+			<Option target="inputlag"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/joysticks.c">
+			<Option target="joysticks"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/monitors.c">
+			<Option target="monitors"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/msaa.c">
+			<Option target="msaa"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/opacity.c">
+			<Option target="opacity"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/reopen.c">
+			<Option target="reopen"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/tearing.c">
+			<Option target="tearing"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/threads.c">
+			<Option target="threads"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/timeout.c">
+			<Option target="timeout"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/title.c">
+			<Option target="title"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/vulkan.c">
+			<Option target="vulkan"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/windows.c">
+			<Option target="windows"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\res\includes\glfw\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\res\includes\glfw\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\res\includes\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\res\includes\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\res\includes\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\res\includes\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\res\includes\glfw\examples\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glfw/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\res\includes\glfw\tests\"/>
+		</Unit>
+		<Unit filename="D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\res\includes\glad\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

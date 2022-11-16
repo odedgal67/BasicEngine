@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/stb_image.c
+stb_image.h
+D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/stb_image.h
+math.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+assert.h
+-
+stdarg.h
+-
+
+D:/School/7th_semester/Graphics/Assignments/BasicEngine/Engine3D/stb_image.h
+stdio.h
+-
+

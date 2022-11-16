@@ -3,6 +3,7 @@
 #include <iostream>
 #include <glm/gtc/matrix_transform.hpp>
 
+
 #define UP	(-256 * 4)
 #define DOWN	(256 * 4)
 #define RIGHT	4
@@ -30,18 +31,19 @@ Game::Game(float angle ,float relationWH, float near1, float far1) : Scene(angle
 void Game::Init()
 {		
 
-	AddShader("../../res/shaders/pickingShader");	
-	AddShader("../../res/shaders/basicShader");
+	AddShader("../res/shaders/pickingShader");
+	AddShader("../res/shaders/basicShader");
 	
-	const std::string& fileName = "../../res/textures/lena256.jpg";
+	const std::string& fileName = "../res/textures/lena256.jpg";
 	//unsigned char* floydData = Floyd(fileName);
-	unsigned char* halftoneData = Halftone(fileName);
+	//unsigned char* halftoneData = Halftone(fileName);
 	//unsigned char** data = Generate2DMatrix(halftoneData, 256); 
-	//unsigned char* edgeDetectionData = EdgeDetection(fileName);
+	unsigned char* edgeDetectionData = EdgeDetection(fileName);
+
 	//AddTexture(fileName, false);
 	//AddTexture(256,256,floydData);
-	AddTexture(512,512,halftoneData);
-	//AddTexture(256,256,edgeDetectionData);
+	//AddTexture(512,512,halftoneData);
+	AddTexture(256,256,edgeDetectionData);
 
 	AddShape(Plane,-1,TRIANGLES);
 	
@@ -52,6 +54,20 @@ void Game::Init()
 	pickedShape = -1;
 	
 	//ReadPixel(); //uncomment when you are reading from the z-buffer
+}
+
+unsigned char** substract(unsigned char** mat1, unsigned char** mat2, int size) {
+    unsigned char** res = new unsigned char*[size];
+    for(int i=0; i<size; i++)
+    {
+        res[i] = new unsigned char[size*4];
+    }
+    for(int i=0;i<size;i++){
+        for(int j=0; j < size * 4; j++) {
+            res[i][j] = abs(mat1[i][j] - mat2[i][j]);
+        }
+    }
+    return res;
 }
 
 unsigned char* Game::Floyd(const std::string& fileName)
@@ -193,7 +209,7 @@ unsigned char* Game::Halftone(const std::string& fileName)
 				newData2D[2*i][2*j + 4] = 255; //Right
 				newData2D[2*i + 1][2*j + 4] = 255;//DownRight
 
-				//G
+				//
 				newData2D[2*i][2*j + 1] = 255;
 				newData2D[2*i + 1][2*j + 1] = 255; //Down
 				newData2D[2*i][2*j + 4 + 1] = 255; //Right
@@ -211,19 +227,307 @@ unsigned char* Game::Halftone(const std::string& fileName)
 	return newData;
 }
 
+unsigned char** generateClean2DMatrix(int size) {
+    unsigned char** res = new unsigned char*[size];
+    for(int i=0; i<size; i++)
+    {
+        res[i] = new unsigned char[size*4];
+    }
+    return res;
+}
+int** generateCleanInt2DMatrix(int size) {
+    int** res = new int*[size];
+    for(int i=0; i<size; i++)
+    {
+        res[i] = new int[size*4];
+    }
+    return res;
+}
+double** generateCleanDouble2DMatrix(int size) {
+    double ** res = new double *[size];
+    for(int i=0; i<size; i++)
+    {
+        res[i] = new double[size*4];
+    }
+    return res;
+}
+
+float calculateNewValue(unsigned char** data, int row, int col, glm::mat3 kernel, int size, int normalFactor) {
+    float sum = 0;
+    int adjacentRow;
+    int adjacentCol;
+    // diagonal up left
+    adjacentRow = row - 1;
+    adjacentCol = col - 4;
+    if (adjacentCol >= 0 && adjacentRow >= 0) {
+        sum += data[adjacentRow][adjacentCol] * kernel[0][0];
+    }
+    // left
+    adjacentRow = row;
+    adjacentCol = col - 4;
+    if (adjacentCol >= 0 && adjacentRow >= 0) {
+        sum += data[adjacentRow][adjacentCol]  * kernel[1][0];
+    }
+    // diagonal down left
+    adjacentRow = row + 1;
+    adjacentCol = col - 4;
+    if (adjacentCol >= 0 && adjacentRow < size)
+    {
+        sum += data[adjacentRow][adjacentCol] * kernel[2][0];
+    }
+    // down
+    adjacentRow = row + 1;
+    adjacentCol = col;
+    if (adjacentCol >= 0 && adjacentRow < size)
+    {
+        sum += data[adjacentRow][adjacentCol]  * kernel[2][1];
+    }
+    // diagonal down right
+    adjacentRow = row + 1;
+    adjacentCol = col + 4;
+    if (adjacentCol <= size * 4 && adjacentRow < size)
+    {
+        sum += data[adjacentRow][adjacentCol]  * kernel[2][2];
+    }
+    // right
+    adjacentRow = row;
+    adjacentCol = col + 4;
+    if (adjacentCol <= size * 4 && adjacentRow < size)
+    {
+        sum += data[adjacentRow][adjacentCol]  * kernel[1][2];
+    }
+    // diagonal upper right
+    adjacentRow = row - 1;
+    adjacentCol = col + 4;
+    if (adjacentCol <= size * 4 && adjacentRow >= 0)
+    {
+        sum += data[adjacentRow][adjacentCol]  * kernel[0][2];
+    }
+    // up
+    adjacentRow = row - 1;
+    adjacentCol = col;
+    if (adjacentCol >= 0 && adjacentRow >= 0)
+    {
+        sum += data[adjacentRow][adjacentCol]  * kernel[0][1];
+    }
+    sum += data[row][col] * kernel[1][1];
+    return sum / normalFactor;
+}
+
+float* getCellNewValue(unsigned char** data, int row, int col, glm::mat3 kernel, float normalFactor, int size) {
+    float res[3];
+    res[0] = calculateNewValue(data, row, col, kernel, size, normalFactor);
+    res[1] = calculateNewValue(data, row, col+1, kernel, size, normalFactor);
+    res[2] = calculateNewValue(data, row, col+2, kernel, size, normalFactor);
+    return res;
+}
+
+unsigned char** applyConvolution(unsigned char** data, glm::mat3 kernel, int size, float normalFactor) {
+    unsigned char** res = generateClean2DMatrix(size);
+    for(int i = 0; i < size; i++) {
+        for(int j=0; j < size * 4; j+=4) {
+            float* currCellNewValue = getCellNewValue(data, i, j, kernel, normalFactor, size);
+            res[i][j] = currCellNewValue[0];
+            res[i][j+1] = currCellNewValue[1];
+            res[i][j+2] = currCellNewValue[2];
+        }
+    }
+    return res;
+}
+int** applyGradient(unsigned char** data, glm::mat3 kernel, int size, float normalFactor) {
+    int** res = generateCleanInt2DMatrix(size);
+    for(int i = 0; i < size; i++) {
+        for(int j=0; j < size * 4; j+=4) {
+            float* currCellNewValue = getCellNewValue(data, i, j, kernel, normalFactor, size);
+            res[i][j] = currCellNewValue[0];
+            res[i][j+1] = currCellNewValue[1];
+            res[i][j+2] = currCellNewValue[2];
+        }
+    }
+    return res;
+}
+
+unsigned char** applyGausDerivative(unsigned char** data, int size) {
+    auto kernel = glm::mat3(
+            1,2,1,
+            2,4,2,
+            1,2,1
+            );
+    float normalFactor = 16.0;
+    return applyConvolution(data, kernel, size, normalFactor);
+}
+int** getDirectionalGradient(unsigned char** data, int size, bool isX) {
+    glm::mat3 kernel;
+    if(isX){
+        kernel = glm::mat3 (
+                -1,0,1,
+                -2,0,2,
+                -1,0,1
+                );
+    }
+    else {
+        kernel = glm::mat3 (
+                -1,-2,-1,
+                0,0,0,
+                1,2,1
+                );
+    }
+    float normalFactor = 1.0; // no need to normalize here since sum is zero
+    return applyGradient(data, kernel, size, normalFactor);
+}
+
+float* getGeneralGradientNewValue(int** gradX, int** gradY, int row, int col) {
+    float res[3];
+    res[0] = std::sqrt(std::pow(gradX[row][col], 2) * std::pow(gradY[row][col], 2));
+    res[1] = std::sqrt(std::pow(gradX[row][col+1], 2) * std::pow(gradY[row][col+1], 2));
+    res[2] = std::sqrt(std::pow(gradX[row][col+2], 2) * std::pow(gradY[row][col+2], 2));
+    return res;
+}
+
+int** getGeneralGradient(int** gradX, int** gradY, int size) {
+    int** res = generateCleanInt2DMatrix(size);
+    for (int i=0;i<size;i++) {
+        for(int j=0; j< size * 4; j+=4) {
+            float* newValue = getGeneralGradientNewValue(gradX, gradY, i,j);
+            res[i][j] = newValue[0];
+            res[i][j+1] = newValue[1];
+            res[i][j+2] = newValue[2];
+        }
+    }
+    return res;
+}
+
+double radianToDegree(int radian) {
+    double pi = 3.141592654;
+    return radian * 180/pi + 180;
+}
+double* getGradientDirection(int** gradX, int** gradY, int row, int col) {
+    double res[3];
+    res[0] = radianToDegree(atan2(gradX[row][col], gradY[row][col]));
+    res[1] = radianToDegree(atan2(gradX[row][col+1], gradY[row][col+1]));
+    res[2] = radianToDegree(atan2(gradX[row][col+2], gradY[row][col+2]));
+    return res;
+}
+double** getGradientDirection(int** gradX, int** gradY, int size) {
+    double ** res = generateCleanDouble2DMatrix(size);
+    for (int i=0;i<size;i++) {
+        for(int j=0; j< size * 4; j+=4) {
+            double* newValue = getGradientDirection(gradX, gradY, i,j);
+            res[i][j] = newValue[0];
+            res[i][j+1] = newValue[1];
+            res[i][j+2] = newValue[2];
+        }
+    }
+    return res;
+}
+int* getNegativeAndPositive(int** gradient,double angle, int row, int col) {
+    double pi = 180;
+    int res[2];
+    if ((0 <= angle < pi/8) ||  (15*pi/8 <= angle <= 2*pi)) {
+        res[0] = gradient[row][col-1];
+        res[1] = gradient[row][col+1];
+    }
+    else if ((pi / 8 <= angle * 3 * pi / 8) || (9 * pi / 8 <= angle < 11 * pi / 8))
+    {
+        res[0] = gradient[row-1][col+1];
+        res[1] = gradient[row+1][col-1];
+    }
+    else if ((3 * pi / 8 <= angle < 5 * pi / 8) || (11 * pi / 8 <= angle < 13 * pi / 8))
+    {
+        res[0] = gradient[row-1][col];
+        res[1] = gradient[row+1][col];
+    }
+    else
+    {
+        res[0] = gradient[row-1][col-1];
+        res[1] = gradient[row+1][col+1];
+    }
+    return res;
+}
+
+int* getSuppressed(int** gradient, double** gradAngle, int row, int col, int size) {
+    int res[3] = {0, 0, 0};
+    int negativeR,negativeG,negativeB,positiveR,positiveG,positiveB;
+    double angleR,angleG,angleB;
+    angleR = gradAngle[row][col];
+    angleG = gradAngle[row][col + 1];
+    angleB = gradAngle[row][col + 2];
+    int* redNegativeAndPositive = getNegativeAndPositive(gradient,angleR,row,col);
+    int* greenNegativeAndPositive = getNegativeAndPositive(gradient,angleG,row,col);
+    int* blueNegativeAndPositive = getNegativeAndPositive(gradient,angleB,row,col);
+    negativeR = redNegativeAndPositive[0];
+    positiveR = redNegativeAndPositive[1];
+    negativeG = greenNegativeAndPositive[0];
+    positiveG = greenNegativeAndPositive[1];
+    negativeB = blueNegativeAndPositive[0];
+    positiveB = blueNegativeAndPositive[1];
+    if (gradient[row][col] >= negativeR && gradient[row][col] >= positiveR) {
+        res[0] = gradient[row][col];
+    }
+    if (gradient[row][col+1] >= negativeG && gradient[row][col+1] >= positiveG) {
+        res[1] = gradient[row][col+1];
+    }
+    if (gradient[row][col+2] >= negativeB && gradient[row][col+2] >= positiveB) {
+        res[2] = gradient[row][col+2];
+    }
+    return res;
+}
+int** applyNonMaximumSuppression(int** gradient, double** gradDirection, int size) {
+    int** res = generateCleanInt2DMatrix(size);
+    for(int i=0;i<size;i++) {
+        for(int j=0;j<size*4;j+=4) {
+            int* afterSuppression = getSuppressed(gradient,gradDirection,i,j,size);
+            res[i][j] = afterSuppression[0];
+            res[i][j+1] = afterSuppression[1];
+            res[i][j+2] = afterSuppression[2];
+        }
+    }
+    return res;
+}
+unsigned char* getThresholding(int** suppressed, int top, int row, int col) {
+    unsigned char res[3] = {0,0,0};
+    int suppressedR,suppressedG,suppressedB;
+    suppressedR = suppressed[row][col];
+    suppressedG = suppressed[row][col+1];
+    suppressedB = suppressed[row][col+2];
+    if (suppressedR >= top) {
+        res[0] = 255;
+    }
+    if (suppressedG >= top) {
+        res[1] = 255;
+    }
+    if (suppressedB >= top) {
+        res[2] = 255;
+    }
+    return res;
+}
+unsigned char** thresholding(int** suppressed, int top, int bottom, int size) {
+    unsigned char** res = generateClean2DMatrix(size);
+    for(int i=0;i<size;i++) {
+        for(int j=0;j<size*4;j+=4) {
+            unsigned char* afterThresholding = getThresholding(suppressed,top,i,j);
+            res[i][j] = afterThresholding[0];
+            res[i][j+1] = afterThresholding[1];
+            res[i][j+2] = afterThresholding[2];
+        }
+    }
+    return res;
+}
 
 unsigned char* Game::EdgeDetection(const std::string& fileName)
 {
 	int width, height, numComponents;
+    int maxGrad = std::sqrt(255 * 255 * 2);
     unsigned char* data = stbi_load((fileName).c_str(), &width, &height, &numComponents, 4);
-	
-    // int i =0;
-    // for(int i=0; i < 256 * 256 * 4; i++)
-	// {
-	// 	data[i] = (data[i] / 16) * 16;
-	// }
-
-	return data;
+    unsigned char** data2D = Generate2DMatrix(data, 256);
+    unsigned char** newData2D = applyGausDerivative(data2D, 256);
+    int** gradX = getDirectionalGradient(newData2D, 256, true);
+    int** gradY = getDirectionalGradient(newData2D, 256, false);
+    int** generalGrad = getGeneralGradient(gradX, gradY, 256);
+    double** angle = getGradientDirection(gradX, gradY, 256);
+    int** nonMaxSuppressed = applyNonMaximumSuppression(generalGrad,angle, 256);
+    data2D = thresholding(nonMaxSuppressed, 0.5 * maxGrad, 0.3 * maxGrad, 256);
+	return Generate1DMatrix(data2D, 256);
 }
 
 unsigned char** Game::Generate2DMatrix(unsigned char* data, int size)
