@@ -208,6 +208,7 @@ CMakeFiles\Game.dir\Game\game.cpp.obj: ..\res\includes\glm\gtc\matrix_transform.
 CMakeFiles\Game.dir\Game\game.cpp.obj: ..\res\includes\glm\gtc\..\mat4x4.hpp
 CMakeFiles\Game.dir\Game\game.cpp.obj: ..\res\includes\glm\gtc\matrix_transform.inl
 CMakeFiles\Game.dir\Game\game.cpp.obj: ..\res\includes\glm\gtc\..\trigonometric.hpp
+CMakeFiles\Game.dir\Game\game.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include\fstream"
 
 
 CMakeFiles\Game.dir\Game\main.cpp.obj: ..\Game\main.cpp
@@ -815,6 +816,8 @@ CMakeFiles\Game.dir\Game\main.cpp.obj: ..\res\includes\glm\detail\_fixes.hpp
 ..\res\includes\glm\gtc\matrix_transform.inl:
 
 ..\res\includes\glm\gtc\..\trigonometric.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include\fstream":
 
 ..\Game\main.cpp:
 

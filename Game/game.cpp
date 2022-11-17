@@ -2,6 +2,7 @@
 #include "stb_image.h"
 #include <iostream>
 #include <glm/gtc/matrix_transform.hpp>
+#include <fstream>
 
 
 #define UP	(-256 * 4)
@@ -9,16 +10,6 @@
 #define RIGHT	4
 #define LEFT	-4
 
-static void printMat(const glm::mat4 mat)
-{
-	std::cout<<" matrix:"<<std::endl;
-	for (int i = 0; i < 4; i++)
-	{
-		for (int j = 0; j < 4; j++)
-			std::cout<< mat[j][i]<<" ";
-		std::cout<<std::endl;
-	}
-}
 
 Game::Game() : Scene()
 {
@@ -35,20 +26,25 @@ void Game::Init()
 	AddShader("../res/shaders/basicShader");
 	
 	const std::string& fileName = "../res/textures/lena256.jpg";
-	//unsigned char* floydData = Floyd(fileName);
-	//unsigned char* halftoneData = Halftone(fileName);
-	//unsigned char** data = Generate2DMatrix(halftoneData, 256); 
-	unsigned char* edgeDetectionData = EdgeDetection(fileName);
+    AddTexture(fileName, false);
+    unsigned char* edgeDetectionData = EdgeDetection(fileName);
+    unsigned char* halftoneData = Halftone(fileName);
 
-	//AddTexture(fileName, false);
-	//AddTexture(256,256,floydData);
-	//AddTexture(512,512,halftoneData);
-	AddTexture(256,256,edgeDetectionData);
+    unsigned char* floydData = Floyd(fileName);
+
+	unsigned char** data = Generate2DMatrix(halftoneData, 256);
 
 	AddShape(Plane,-1,TRIANGLES);
-	
+	AddShape(Plane,-1,TRIANGLES);
+	AddShape(Plane,-1,TRIANGLES);
+	AddShape(Plane,-1,TRIANGLES);
+
+    for(int i=0;i<4;i++) {
+        pickedShape = i;
+        SetShapeTex(i, i);
+    }
 	pickedShape = 0;
-	
+
 	SetShapeTex(0,0);
 	MoveCamera(0,zTranslate,10);
 	pickedShape = -1;
@@ -56,20 +52,17 @@ void Game::Init()
 	//ReadPixel(); //uncomment when you are reading from the z-buffer
 }
 
-unsigned char** substract(unsigned char** mat1, unsigned char** mat2, int size) {
-    unsigned char** res = new unsigned char*[size];
-    for(int i=0; i<size; i++)
-    {
-        res[i] = new unsigned char[size*4];
-    }
-    for(int i=0;i<size;i++){
-        for(int j=0; j < size * 4; j++) {
-            res[i][j] = abs(mat1[i][j] - mat2[i][j]);
+void generateFloydFile(unsigned char* data, int size) {
+    std::ofstream outfile;
+    outfile.open("img6.txt", std::ofstream::out);
+    for(int i=0;i<size;i++) {
+        outfile << (int)data[i]/16;
+        if (i < size- 1) {
+            outfile << ",";
         }
     }
-    return res;
+    outfile.close();
 }
-
 unsigned char* Game::Floyd(const std::string& fileName)
 {
 	int width, height, numComponents;
@@ -100,10 +93,21 @@ unsigned char* Game::Floyd(const std::string& fileName)
         data[i+2 + RIGHT + DOWN] = data[i+2 + RIGHT + DOWN] + (e * 1/16);
 		//Dont change Alpha (i+3)
 	}
-
+    AddTexture(width, height, data);
+    generateFloydFile(data,256 * 255 * 4);
 	return data;
 }
-
+void generateHalftoneFile(unsigned char* data, int size) {
+    std::ofstream outfile;
+    outfile.open("img5.txt", std::ofstream::out);
+    for(int i=0;i<size;i++) {
+        outfile << (int)data[i]/255;
+        if (i < size- 1) {
+            outfile << ",";
+        }
+    }
+    outfile.close();
+}
 unsigned char* Game::Halftone(const std::string& fileName)
 {
 	int width, height, numComponents;
@@ -224,6 +228,8 @@ unsigned char* Game::Halftone(const std::string& fileName)
 		}
 	}
 	unsigned char* newData = Generate1DMatrix(newData2D, 512);
+    AddTexture(2 * width, 2 * height, newData);
+    generateHalftoneFile(newData, 512*512*4);
 	return newData;
 }
 
@@ -378,9 +384,9 @@ int** getDirectionalGradient(unsigned char** data, int size, bool isX) {
 
 float* getGeneralGradientNewValue(int** gradX, int** gradY, int row, int col) {
     float res[3];
-    res[0] = std::sqrt(std::pow(gradX[row][col], 2) * std::pow(gradY[row][col], 2));
-    res[1] = std::sqrt(std::pow(gradX[row][col+1], 2) * std::pow(gradY[row][col+1], 2));
-    res[2] = std::sqrt(std::pow(gradX[row][col+2], 2) * std::pow(gradY[row][col+2], 2));
+    res[0] = std::sqrt(std::pow(gradX[row][col], 2) + std::pow(gradY[row][col], 2));
+    res[1] = std::sqrt(std::pow(gradX[row][col+1], 2) + std::pow(gradY[row][col+1], 2));
+    res[2] = std::sqrt(std::pow(gradX[row][col+2], 2) + std::pow(gradY[row][col+2], 2));
     return res;
 }
 
@@ -503,6 +509,8 @@ unsigned char* getThresholding(int** suppressed, int top, int row, int col) {
 }
 unsigned char** thresholding(int** suppressed, int top, int bottom, int size) {
     unsigned char** res = generateClean2DMatrix(size);
+    std::ofstream outfile;
+    outfile.open("img4.txt", std::ofstream::out);
     for(int i=0;i<size;i++) {
         for(int j=0;j<size*4;j+=4) {
             unsigned char* afterThresholding = getThresholding(suppressed,top,i,j);
@@ -512,6 +520,23 @@ unsigned char** thresholding(int** suppressed, int top, int bottom, int size) {
         }
     }
     return res;
+}
+
+void generateEdgeFile(unsigned char* data,int size) {
+    std::ofstream outfile;
+    outfile.open("img4.txt", std::ofstream::out);
+    for(int i=0; i< size; i++) {
+        if (data[i] == 255) {
+            outfile << "1";
+        }
+        else {
+            outfile << "0";
+        }
+        if (i < size-1) {
+            outfile << ",";
+        }
+    }
+    outfile.close();
 }
 
 unsigned char* Game::EdgeDetection(const std::string& fileName)
@@ -527,7 +552,10 @@ unsigned char* Game::EdgeDetection(const std::string& fileName)
     double** angle = getGradientDirection(gradX, gradY, 256);
     int** nonMaxSuppressed = applyNonMaximumSuppression(generalGrad,angle, 256);
     data2D = thresholding(nonMaxSuppressed, 0.5 * maxGrad, 0.3 * maxGrad, 256);
-	return Generate1DMatrix(data2D, 256);
+	data = Generate1DMatrix(data2D, 256);
+    generateEdgeFile(data, 256 * 256 * 4);
+    AddTexture(width, height, data);
+    return data;
 }
 
 unsigned char** Game::Generate2DMatrix(unsigned char* data, int size)

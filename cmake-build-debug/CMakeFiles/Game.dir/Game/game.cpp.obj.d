@@ -204,3 +204,4 @@ D:/School/7th_semester/Graphics/Assignments/BasicEngine/res/includes/glm/gtc/mat
 d:/school/7th_semester/graphics/assignments/basicengine/res/includes/glm/gtc/../mat4x4.hpp
 d:/school/7th_semester/graphics/assignments/basicengine/res/includes/glm/gtc/matrix_transform.inl
 d:/school/7th_semester/graphics/assignments/basicengine/res/includes/glm/gtc/../trigonometric.hpp
+C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.16.27023/include/fstream

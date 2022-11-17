@@ -93,14 +93,24 @@
 				Clear(0,0,0,0);
 		}
 
-		glViewport(256,0,256,256);
-		//glViewport(0,256,256,256);
 		for (unsigned int i=0; i<shapes.size();i++)
 		{
 			if(shapes[i]->Is2Render())
 			{
 				glm::mat4 Model = Normal * shapes[i]->MakeTrans();
-				
+				if (i == 0) {
+					glViewport(0, 256, 256, 256);
+				}
+				else if(i == 1) {
+					glViewport(256, 256, 256, 256);
+				}
+				else if (i == 2) {
+					glViewport(0, 0, 256, 256);
+				}
+				else if (i == 3) {
+					glViewport(256, 0, 256, 256);
+				}
+
 				if(shaderIndx > 0)
 				{
 					Update(MVP,Model,shapes[i]->GetShader());
